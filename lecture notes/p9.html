@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Nav</title>
+    <style>
+         body {font-family: "Open Sans",Roboto,"Helvetica Neue",Helvetica,sans-serif;
+        background-color:firebrick;}
+           
+         nav{
+            background-color:#000000;
+            padding:5px;
+            color:#54c4c6;
+        }
+        nav div{
+            padding: 5px;
+        }
+        .nav1{
+            display:flex;
+            justify-content:space-between;
+        }
+        .childflexbox{
+            display:flex;
+        }
+        a{
+            color:#fffdfd;
+        }
+        img{
+            width: 80px;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Split Navigation</h2>
+    <nav class="nav1">
+    <div class = "childflexbox">
+        <div> <a href="https://www.amazon.com">Amazon</a> </div>
+
+        <div>
+            <a href="https://www.google.com">Google</a>
+        </div>
+        <div>
+            <a href="https://www.cuse.com">Cuse</a>
+            
+        </div>
+     </div>
+
+        <div class ="childflexbox">
+            <div>
+            <img src="../images/blushing.jpeg" alt="blushing emoji">
+            </div>
+            <div>
+            <img src="../images/curious.jpeg" alt="curious emoji">
+            </div>
+    </div>
+
+</body>
+</html>
