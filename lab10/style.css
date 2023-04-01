@@ -15,16 +15,15 @@ nav{
 nav{
     margin-bottom: 30px;
 }
-span{
-    display:none;
-}
-@media only screen and (max-width: 600px){
 
-    a{width:100%;
-    display:block}
-}
 
-@media only screen and (min-width: 600px){
-    a{width:100%;
-    display:block}
-}
+@media only screen and (min-width: 768px){
+    }
+        a{width:100%;
+        display:block}
+        span{display:none;}
+    
+
+  
+
+
