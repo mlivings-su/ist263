@@ -1,0 +1,48 @@
+nav {
+    background-color:#DFFFD8 ;
+    
+}
+nav a {
+    color:#B4E4FF;
+}
+nav a:hover{
+
+background-color:#FFFFFF ;
+}
+nav{
+    padding: 10px;
+}
+nav{
+    margin-bottom: 30px;
+}
+
+
+@media only screen and (min-width: 768px){
+    }
+        a{width:100%;
+        display:block}
+        span{display:none;}
+
+        .skip{
+            background-color: #FFFFFF;
+            padding:5px;
+            border: 1px solid black;
+            margin-bottom: 50px;
+
+
+            
+            
+            
+            
+
+        }
+        .skip.focus{
+            left:10px;
+        }
+                
+            
+    
+
+  
+
+
