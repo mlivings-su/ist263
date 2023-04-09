@@ -3,7 +3,7 @@ nav {
     
 }
 nav a {
-    color:#B4E4FF;
+    color:#004166;
 }
 nav a:hover{
 
@@ -25,6 +25,7 @@ nav{
 
         .skip{
             background-color: #FFFFFF;
+            color:#004166;
             padding:5px;
             border: 1px solid black;
             margin-bottom: 50px;
