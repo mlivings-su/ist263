@@ -10,6 +10,7 @@
 <style>
     body{
         background-color:#ecf5fa;
+        font-family: 'Courier New', Courier, monospace;
     }
     .row1 {
         display:flex;
@@ -24,7 +25,7 @@
     }
     .col1{
         flex:2;
-        background-color: #f0bbea;
+        background-color: rgb(255, 255, 240);
         border-radius: 40px;
         padding:20px;
     }
@@ -53,9 +54,16 @@
         margin:20px;
         border-radius: 60px;
     }
+    p, h1, h2, h3{
+        text-align: center;
+    }
+    p{
+        font-size: 1.5em;
+        flex-wrap: wrap;
+    }
     
 nav a {
-    color:#B4E4FF;
+    color:#f0bbea/*#B4E4FF*/;
 }
 nav a:hover{
 
@@ -73,10 +81,10 @@ nav{
         background-color:rgb(255, 255, 240);
 
     }
-
- 
-    
-        
+    @media only screen and (min-width: 768px){
+    }
+        a{width:100%;
+        display:block}
     
    
     
@@ -85,12 +93,11 @@ nav{
     <nav class="nav1">
         
         
-        
 
 
-            <div><a href="../project5/homepage.html">Home </a></div> <!--first flexbox column-->
-            <div><a href="../project5/product.html">Our Products </a></div>
-            <div><a href="../project5/menu.html">Menu </a></div>
+            <div><a href="../project6/homepage.html">Home </a></div> <!--first flexbox column-->
+            <div><a href="../project6/product.html">Our Products </a></div>
+            <div><a href="../project6/menu.html">Menu </a></div>
     
     </nav>
 
@@ -103,10 +110,10 @@ nav{
 
     <div class="col1">
         <h2><strong>Micah's Bake Shop</strong></h2>
-        <h3>A taste of Home...</h3><br>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta impedit voluptatibus, magni saepe blanditiis temporibus placeat consectetur ullam hic, molestias, accusamus suscipit voluptatem consequuntur. Ipsam illum sapiente porro excepturi ab!</p>
+        <h3>A Taste of Home...</h3><br>
+        <p>Micah Livingston, the proud owner of Micah’s Bakeshop. She shares some of her most cherished desserts from her childhood to offer people a taste of what home is like for her! Micah's Bakeshop presents an array of classic baked goods made entirely from scratch! Whether you are looking for some delicious chocolate chunk cookies or if you want some of the freshest keylime pie,  Micah's Bake Shop offers it all! </p>
     </div>
-
+    
 </div>
 <div class="row2">
     <div class="col2">
