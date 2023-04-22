@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing styles with Javascript</title>
+    <script>
+        function changeColor(){
+            document.getElementById("thepage").style.backgroundColor = 
+                document.getElementById("picker").value;
+            /* if the css proeprty has a hyphen take it out and capitalize the second word*/
+        }
+    </script>
+</head>
+<body id="thepage">
+    <form>
+        <input type="color" id="picker" onchange="changeColor();"> 
+    </form>
+</body>
+</html>
