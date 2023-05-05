@@ -18,52 +18,35 @@
         background-color:#ecf5fa;
         font-family: 'Courier New', Courier, monospace;
     }
-    .row1 {
-        display:flex;
-        padding: 40px;
-        margin: 20px
-    }
-    .image1 {
-        padding:40px;
-        margin:20px;
-        flex:1;
-        border-radius: 60px;
-    }
+
+    
+
     .info{
-        flex:2;
-        background-color: rgb(255, 255, 240);
-        border-radius: 40px;
+        justify-content: center;
+        
+        
+        border-radius: 20px;
         padding:20px;
+        margin:20px;
     }
     h1{
         text-align: center;
         background-color: #f0bbea;
-        border-radius: 40px;
+        border-radius: 20px;
         padding:20px;
-        font-family: 'Arvo', serif;
-
-    }
-    .row2{
-        display:flex;
-        padding:40px;
         margin:20px;
+        
 
     }
+    
     .contact{
-        flex:1;
         background-color: #f0bbea;
-        border-radius: 40px;
+        border-radius: 20px;
         padding:20px;
+        margin:20px;
         
     }
-    .image2{
-        flex:2;
-        padding:40px;
-        margin:20px;
-        border-radius: 60px;
-        height:20em;
-        width:26em;
-    }
+    
     p, h1, h2, h3{
         text-align: center;
     }
@@ -71,14 +54,139 @@
         font-size: 1.5em;
         flex-wrap: wrap;
     }
-  
-   
+    .baking {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size:8em;
+  margin:20px;
+  padding:20px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
     
+
+}
+.imagerow{
+    display:flex;
+}
+
+      #newsletter{
+            position: absolute;
+            top: 80%;
+            left:40%;
+            background-color: #ecf5fa;
+            padding: 25px;
+            border: 5px solid #f0bbea;
+        }
+        .close{
+            position:absolute;
+            top:0px;
+            right: 0px;
+            cursor:pointer;
+        }
+        .row {
+  display: flex;
+ 
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  margin:20px;
+ 
+ 
+
+
+}
+.slides{
+   height:460px;
+   width:320px;
+   padding:20px;
+   margin:20px;
+
+   
+
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.content{
+    background-color: rgb(255, 255, 240);
+    padding: 20px;
+    margin:20px;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #cccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+}
+
+
+input[type=submit] {
+  background-color: rgb(255, 255, 240);
+  color: #000000;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #f0bbea;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+
     
+
+
+
    
     
 </style>
+<script>
+    function openModal(){
+            document.getElementById('newsletter').style.display ="block";
+        }
+    function closenModal(){
+            document.getElementById('newsletter').style.display ="none";
+        }
+
+
+
+
+
+       
+
+
+     
+</script>
+
 <link rel="stylesheet" href="../project7/style.css">
 <body>
     <nav class="nav1">
@@ -86,56 +194,134 @@
         
 
 
-            <div><a href="../project7/homepage.html">Home </a></div> <!--first flexbox column-->
-            <div><a href="../project7/product.html">Our Products </a></div>
-            <div><a href="../project7/menu.html">Menu </a></div>
+            <div><a href="../project7/homepage.html">HOME </a></div> <!--first flexbox column-->
+            <div><a href="../project7/product.html">OUR PRODUCTS </a></div>
+            <div><a href="../project7/menu.html">MENU </a></div>
     
     </nav>
 
 
-<h1>About Us</h1>
-<div class="col1">
+   
 
-    <div class="row1">
-        <div>
-
-            <img src="../images/micah.jpg" alt="Micah Livingston" class="image1">
-
-        </div>
-
-        <div class="info">
-
-         <h2><strong>Micah's Bake Shop</strong></h2>
-         <h3>A Taste of Home...</h3><br>
-            <p>Micah Livingston is the proud owner of Micah’s Bakeshop. She shares some of her most cherished desserts from her childhood to offer people a taste of what home is like for her! Micah's Bakeshop presents an array of classic baked goods made entirely from scratch! Whether you are looking for some delicious chocolate chunk cookies or if you want some of the freshest keylime pie,  Micah's Bake Shop offers it all! </p>
-        
-        </div>
+   <header>
     
+    <div class="baking">
+        <img src="../images/qualitycookie.jpeg" alt="Milk and Cookies" style="width:100%;">
+        <div class="centered">MICAH'S BAKESHOP</div>
 
+
+      </div>
+
+    </header>
+
+  
+  
+
+<section>
+<h1>Our Story</h1>
+
+<div class="content">
+    <div class="info">
+
+    <h2>A TASTE OF HOME...</h2><br>
+       <p>Micah Livingston is the proud owner of Micah’s Bakeshop. She shares some of her most cherished desserts from her childhood to offer people a taste of what home is like for her! Micah's Bakeshop presents an array of classic baked goods made entirely from scratch! Whether you are looking for some delicious chocolate chunk cookies or if you want some of the freshest keylime pie,  Micah's Bake Shop offers it all! </p>
+   
     </div>
 
+    <div class="row">
+   
+
+    <div class="column">
+        <img class="slides" src="../images/cakemaking.jpeg" alt="baker making a cake">
+
+    </div>
+ <div class="column">
+        <img class="slides" src="../images/micah.jpg" alt=" a photo of Micah Livingston">
+
+    </div>
+    <div class="column">
+        <img class="slides" src="../images/qualitybrownies.jpeg" alt="brownies">
+
+    </div>
+</div>
+</section>
 
 
 
-    <div class="row2">
-        <div class="contact">
+
+
+
+
+
+
+
+  
+
+
+<section>
+
+    <div class="contact">
+        
         <h2>Contact Us</h2>
         <p>Micah's Bake Shop is located in Syracuse, NY and East Brunswick, NJ</p>
         <p>We are always looking to help out new customers!</p>
         <p> Contact us at: micahtliv@gmail.com for any questions.</p>
+    
+
     </div>
 
-    <div>
-        <img src="../images/bRownies.jpeg" alt="brownies" class="image2">
-    </div>
+  </section>
 
-    </div>  
+  <section>
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+
+    </section>
+
+
+    <section>
+     
+
+    <div id="newsletter">
+        <span class="close" onclick="closenModal();">&times;<br></span> 
+         Subcribe to our Newsletter!
+         <form>
+            email: <input type="text">
+         </form>
+        
+     </div>
+    </section>
+
+
+   
 
 </div>
 
 
 
 <footer>
+  <a href="main" class="skip" tabindex=1 >Skip to Content</a>
     <p>&copy; 2023</p>
 </footer>
     

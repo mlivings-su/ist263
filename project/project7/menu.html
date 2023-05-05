@@ -14,48 +14,222 @@
 
 </head>
 <style>
+
     h1{
         text-align: center;
         background-color: #f0bbea;
         border-radius: 40px;
         padding:20px;
-        font-family: 'Arvo', serif;
+        
     }
+.food{
+    background-color: #ecf5fa;
+    padding: 20px;
+  margin:20px;
+}
+p{
+    font:black;
+    padding: 20px;
+  margin:20px;
+}
+
+.item{
+    background-color: rgb(255, 255, 240);
+    padding: 20px;
+  margin:20px;
+    
+
+}
+.alert{
+    font-size: larger;
+    text-align: center;
+    
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: black;
+  font-size: 22px;
+  text-align: right;
+  padding: 20px;
+  margin:20px;
+  
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1250em;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.cart{
+    text-align: center;
+
+}
+button{
+    background-color: #f0bbea;
+    size: 20px;
+    padding: 20px;
+  margin:20px;
+
+}
+
+
+
+    
+
+
+    
 
     
  
 </style>
+<script>
+
+  function Added(){
+    alert("Added to Your Cart!");}
+
+   
+
+
+
+
+</script>
+
+
 <link rel="stylesheet" href="../project7/style.css">
+
+
 <body>
+
     <nav class="nav1">
         
         
         
 
 
-        <div><a href="../project7/homepage.html">Home </a></div> <!--first flexbox column-->
-        <div><a href="../project7/product.html">Our Products </a></div>
-        <div><a href="../project7/menu.html">Menu </a></div>
+        <div><a href="../project7/homepage.html">HOME </a></div> <!--first flexbox column-->
+        <div><a href="../project7/product.html">OUR PRODUCTS </a></div>
+        <div><a href="../project7/menu.html">MENU </a></div>
 
-</nav>
+    </nav>
+
 
 <h1>Menu</h1>
-<p>cupcakes — Try our medley of flavors: vanilla, chocolate, red velvet, and confetti flavored cupcakes! 
-    2 for 7$
-    <br>
-    Personal apple pie- This nostalgic dish has a crispy golden layer with the sweetest apple filling! 20$<br>
-    Banana pudding - This Southern Banana pudding is will fill up your soul and stomach.. It contains layers of vanilla pudding, vanilla wafers, and fresh bananas. 8$<br>
-    Chocolate chip cookies - Our soft baked and chewy cookies are rich with flavor! This Starts at 13$ for 6.<br>
-    Brownies- We offer both cake-like brownies and our chewy fudge brownies. Staring at 7 dollars for 2.<br>
-    Mom’s Key Lime Pie - this pie is the perfect dessert for the summer. Enjoy the fresh key lime paired with a graham cracker crust and whipped cream. 25$<br>
-    Cheesecake — Taste our classic cheesecake with a graham cracker crust. This is a fan favorite! 25$<br>
-    Chocolate covered strawberries — Our custom chocolate covered strawberries are great for every occasion. Starting at 26$ for a dozen<br>
-    Cinnamon roles - Try these delicious rolls with our home made cream cheese frosting. <br>
-    Dad’s Oatmeal cookies - enjoy one of Micah’s all time favorite’s! These soft baked treats are available starting at 15$ for 6 count<br>
+
+
+<p class="alert">ONLY ACCEPTING PICK-UP ORDER'S.</p>
+
+
+
+    
+<section>
+
+<div class = item>
+    <h2>APPLE PIE</h2>
+    <p>This nostalgic dish has a crispy golden layer with the sweetest apple filling!</p> 
+    <p class="price">$20</p>
+    <button onclick="Added();">Add to Cart</button>
+</div>
+
+<div class = item>
+    <h2>BANANA PUDDING</h2>
+    <p>This Southern Banana pudding is will fill up your soul and stomach.. It contains layers of vanilla pudding, vanilla wafers, and fresh bananas. 
+   </p> 
+   <p class="price">$8</p>
+   <button onclick="Added();">Add to Cart</button>
+</div>
+
+<div class = item>
+
+    <h2>CHOCOLATE CHIP COOKIES</h2>
+    <p>Our soft baked and chewy cookies are rich with flavor! </p>
+   <p class="price">$13 for 6</p> 
+   <button onclick="Added();">Add to Cart</button>
+</div>
+
+<div class = item>
+    <h2>BROWNIES</h2>
+    <p>We offer both cake-like brownies and our chewy fudge brownies. 
     </p>
+    <p class="price"> $7 for 2</p>
+    <button onclick="Added();">Add to Cart</button>
+</div>
+
+<div class = item>
+    <h2>MOM'S KEYLIME PIE</h2>
+    <p>This pie is the perfect dessert for the summer. Enjoy the fresh key lime paired with a graham cracker crust and whipped cream, Mom's favorite!
+    </p>
+    <p class="price">25$</p>
+    <button onclick="Added();">Add to Cart</button>
+</div>
+
+<div class = item>
+   <h2>CHEESECAKE</h2> 
+   <p>Taste our classic cheesecake with a graham cracker crust. This is a fan favorite! 
+    </p>
+    <p class="price">$25</p> 
+    <button onclick="Added();">Add to Cart</button>
+</div>
+
+<div class = item>
+
+    <h2>CHOCOLATE COVERED STRAWBERRIES</h2>
+     <p>Our custom chocolate covered strawberries are great for every occasion. 
+     </p>
+     <p class="price">$26 for a dozen</p>
+     <button onclick="Added();">Add to Cart</button>
+</div>
+
+<div class = item>
+    <h2>CINNAMON ROLLS</h2>
+    
+    <p>Try these delicious rolls with our home made cream cheese frosting
+    </p>
+    <p class="price">4 for $15</p>
+    <button onclick="Added();">Add to Cart</button>
+</div>  
+
+<div class = item>
+   
+    <h2>DAD'S OATMEAL COOKIES</h2> 
+    <p>Enjoy one of Micah and her Dad's all time favorite’s! </p>
+    <p class="price">$15 for 6</p>
+    <button onclick="Added();">Add to Cart</button>
+
+    
+</div>
+
+</section>
+
+  
+
+
+     
+
+
+
+
 
 
 <footer>
+    <a href="main" class="skip" tabindex=1 >Skip to Content</a>
     <p>&copy; 2023</p>
 </footer>
     

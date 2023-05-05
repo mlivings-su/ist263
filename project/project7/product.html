@@ -14,16 +14,29 @@
 <style>
  h1{
         text-align: center;
+        
         background-color: #f0bbea;
         border-radius: 40px;
         padding:20px;
     }
+h2{
+    text-align: center;
+}
     img{
         
     width: 537px ;
-    height: 357px;
+    height: 457px;
     border-radius: 40px;
-        padding:20px;
+    padding:20px;
+    margin: 20px;
+    
+    
+    
+    
+    
+   
+    
+ 
 
     
 }
@@ -37,11 +50,7 @@ p{
             justify-content:space-around;
            
 }
-.thebuttons{
-    background-color:rgb(255, 255, 240);
-    border-radius: 40px;
-        padding:20px;
-}
+
 
 
 hr.solid {
@@ -52,46 +61,17 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
-* {box-sizing: border-box}
 
-/* Container needed to position the overlay. Adjust the width as needed */
-.cupcakes  {
-  position: relative;
-  width: 50%;
-  max-width: 300px;
-}
 
-/* Make the image to responsive */
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
 
-/* The overlay effect - lays on top of the container and over the image */
-.overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1;
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-}
 
-/* When you mouse over the container, fade in the overlay title */
-.cupcakes :hover .overlay {
-  opacity: 1;
-}
 
-    
   
 </style>
+
+<script>
+    
+</script>
 <link rel="stylesheet" href="../project7/style.css">
 <body>
     <nav class="nav1">
@@ -99,89 +79,94 @@ body{
         
     
 
-        <div><a href="../project7/homepage.html">Home </a></div> <!--first flexbox column-->
-            <div><a href="../project7/product.html">Our Products </a></div>
-            <div><a href="../project7/menu.html">Menu </a></div>
+        <div><a href="../project7/homepage.html">HOME </a></div> <!--first flexbox column-->
+            <div><a href="../project7/product.html">OUR PRODUCTS </a></div>
+            <div><a href="../project7/menu.html">MENU </a></div>
 
 </nav>
 
+<header>
 <h1>Our Proudcts</h1>
-<p></p>
-
-
-
-
-<div class="headers">
-
-<div class="thebuttons"><h3>Limited Time Only</h3></div>
-<div class="thebuttons"><h3>Cookies</h3></div>
-<div class="thebuttons">
-<h3>Cupcakes</h3>
-</div>
-<div class="thebuttons">
-<h3>Pies and Cakes</h3>
-</div>
+</header>
 
 
 
 
 
 
-</div>
 
 
-<hr class="solid">
 
-<h2>Limited Time Only</h2>
+<section>
+<h2>SPECIALS</h2>
+
 
 <div class="allproducts">
 
-    <div>
-    
-    <img src="../images/rolls.jpeg" >
-    <img src="../images/bannana.jpeg">
-    <img src="../images/bRownies.jpeg">
+<div>
+<img src="../images/rolls.jpeg" alt="Cinnamon rolls">
+</div>      
+          
+        
+<div>
+    <img src="../images/bannana.jpeg" alt="banana pudding"></div>
+   <div><img src="../images/bRownies.jpeg" alt="chocolate brownies"></div> 
+    <div><img src="../images/chocstraw.jpeg" alt="chocolate covered strawberries"></div>
       
     
     
 
     </div>
 
+    <hr class="solid">
+
+</section>
 
 
-<h2>Cookies</h2>
+<section>
+
+<h2>COOKIES</h2>
 
 <div>
-    <img src="../images/choc chip.jpeg">
-    <img src="../images/oatmeal.jpeg">
+    <img src="../images/choc chip.jpeg" alt="chcolate chip cookies">
+    <img src="../images/oatmeal.jpeg" alt="oatmeal cookies">
 </div>
 
 
+<hr class="solid">
+</section>
+
+<section>
+<h2>CUPCAKES</h2>
+
+<div>
 
 
-<h2>Cupcakes</h2>
+    <img src="../images/redvelv2.jpeg" alt="red velvet cupcakes" >
+    <img src="../images/choccup.jpeg" alt=" chocolate cupcakes">
+    <img src="../images/vanilla.jpeg" alt= "vanilla cupcakes">
+ 
+    <hr class="solid">
 
-<div class= "cupcakes">
+</section>
 
-
-    <img src="../images/red velvet cupcakes.jpeg" class="image">
-    <div class="overlay">Red velvet cupcakes</div>
-</div>
-
-
-<h2>Pies and Cakes</h2>
+<section>
+<h2>PIES & CAKES</h2>
 
 <div>
   
-    <img src="../images/apple pie.jpeg" >
-   
+    <img src="../images/apple pie.jpeg" alt="applie pie">
    
 
     
-    <img src="../images/keylime.jpeg">
+    <img src="../images/keylime2.jpeg" alt="keylime pie">
+
+
+    <img src="../images/cheesecake.jpeg" alt="cheesecake">
 </div>
 
 </div>
+</section>
 
 
 
@@ -190,6 +175,8 @@ body{
 
     
 <footer>
+   
+    <a href="main" class="skip" tabindex=1 >Skip to Content</a>
     <p>&copy; 2023</p>
 </footer>
     
